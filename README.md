@@ -9,16 +9,8 @@ All dates and times in Indian Standard Time (IST).
 
 ## Getting the indicator(s) you want
 
-To access the data for any of these keys use the following command: **value =
-data[‘state’][‘key name’]**
-
-Here data is object where all of the json file is loaded.
-
-eg1. To get daily Rt point estimates for Punjab: **value =
-data[‘Punjab’][‘rt_point’]**
-
-eg2. To get daily positivity rate (moving avg) for India: **value =
-data[‘India’][‘daily_positive_cases_ma’]**
+The table below is an index of how to find the indicator in our json datsets. 
+**The csv files are similarly named and have the same parameters as the json files.** 
 
 In all of the datafiles India’s hierarchy is kept same as of other states
 because from the view point of data, the keys for India would be same as any
@@ -72,20 +64,37 @@ first layer of keys has the state name (including India) : e.g. ‘Kerala ,
 \*\*mobility data from www.google.com/covid19/mobility, normalised for weekend
 baseline bias
 
+
+To access the data for any of these keys use the following command: **value =
+data[‘state’][‘key name’]**
+
+Here data is object where all of the json file is loaded.
+
+eg1. To get daily Rt point estimates for Punjab: **value =
+data[‘Punjab’][‘rt_point’]**
+
+eg2. To get daily positivity rate (moving avg) for India: **value =
+data[‘India’][‘daily_positive_cases_ma’]**
+
+
 ## API for datasets
 
 | API End Points to get the data                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| rt.json: <https://raw.githubusercontent.com/CovidToday/CovidToday_Website/master/backend/jsonfiles/rt.json>                                           |
-| cfr.json: <https://raw.githubusercontent.com/CovidToday/CovidToday_Website/master/backend/jsonfiles/cfr.json>                                         |
-| positivity_Rate.json: <https://raw.githubusercontent.com/CovidToday/CovidToday_Website/master/backend/jsonfiles/positivity_Rate.json>                 |
-| india_mobility_indented.json: <https://raw.githubusercontent.com/CovidToday/CovidToday_Website/master/backend/jsonfiles/india_mobility_indented.json> |
+| rt.json: <https://github.com/CovidToday/indicator-dataset/raw/master/rt.json>                                           |
+| cfr.json: <https://github.com/CovidToday/indicator-dataset/raw/master/cfr.json>                                         |
+| positivity_Rate.json: <https://github.com/CovidToday/indicator-dataset/raw/master/positivity_Rate.json>                 |
+| india_mobility_indented.json: <https://github.com/CovidToday/indicator-dataset/raw/master/india_mobility_indented.json> |
 
 
 # Terms of Use 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 1. You are welcome to share to website content and visualisations, and run analyses using the datasets from COVID TODAY for public health, educational, journalistic and non-commercial uses, including any personal, editorial, academic, or research purposes. Commercial uses are not permitted and will require permission from COVID TODAY.
 2. **If the website or datasets are shared/used, attribution must be provided appropriately**. When using datasets from COVID TODAY, attribute as "COVID-19 Outbreak Indicators Dataset by COVID TODAY" and provide a link alongside. When linking to the website, attribute as "COVID TODAY Dashboard" and provide a link alongside. 
 3. You should not rely on this website for medical advice or guidance. Since we have no control over the publicly available data our analyses are based on, COVID TODAY hereby disclaims any and all representations and warranties with respect to the Website, including accuracy, fitness for use, reliability, completeness, and non-infringement of third party rights.
 4. These terms and conditions are subject to change. Your use of the Website and Datasets constitutes your acceptance of these terms and conditions and any future modifications thereof.
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
+BY: Credit must be given to you, the creator.
+NC: Only noncommercial use of your work is permitted.
+SA: Adaptations must be shared under the same terms. 
