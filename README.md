@@ -1,4 +1,4 @@
-# Covid Today by iCART <br/>Daily updated datasets for outbreak indicators - India and states 
+### COVID TODAY | open sourced initiative by iCART <br/>Daily updated datasets for outbreak indicators - India and states 
 # How to use the datasets (JSON and CSV)
 
 Dashboard and detailed methods of estimation at www.covidtoday.in <br/>
