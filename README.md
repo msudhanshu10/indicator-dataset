@@ -20,8 +20,8 @@ first layer of keys has the state name (including India) : e.g. ‘Kerala ,
 
 | Json file                    | Key name                 | Indicator obtained                                                                  |
 |------------------------------|--------------------------|-------------------------------------------------------------------------------------|
-| rt.json                      | dates                    | [DD Month name] e.g. ’22 March’                                                     |
-|                              | rt_point                 | Rt, Pooled mean                                                                     |
+| rt.json                      | dates                    | [DD Month] e.g. ’22 March’                                                     |
+|                              | rt_point                 | Rt (Effective reproduction number), Pooled mean                                                                     |
 |                              | rt_std                   | Rt, Standard Deviation                                                              |
 |                              | rt_l95                   | Rt, lower limit of 95% confidence interval                                          |
 |                              | rt_u95                   | Rt, upper limit of 95% confidence interval                                          |
@@ -30,7 +30,7 @@ first layer of keys has the state name (including India) : e.g. ‘Kerala ,
 |                              | cases_mean               | Estimated number of new symptom onsets on that date (used for calculating Rt), Mean |
 |                              | cases_sd                 | Number of new symptom onsets on that date, Standard Deviation                       |
 |                              |                          |                                                                                     |
-| cfr.json                     | dates                    | [DD Month name] e.g. ’22 March’                                                     |
+| cfr.json                     | dates                    | [DD Month] e.g. ’22 March’                                                     |
 |                              | cfr1_point               | Crude NFR or Naïve CFR [Deaths/Total Cases]                                         |
 |                              | cfr2_point               | Outcome adjusted CFR [Deaths/(Recov+Deaths)]                                        |
 |                              | cfr3_point               | Corrected CFR or Lag adjusted CFR [Deaths/Lag adjusted Cases]                       |
@@ -39,7 +39,7 @@ first layer of keys has the state name (including India) : e.g. ‘Kerala ,
 |                              | cfr3_l50                 | Corrected CFR, lower limit of 50% confidence interval                               |
 |                              | cfr3_u50                 | Corrected CFR, upper limit of 50% confidence interval                               |
 |                              |                          |                                                                                     |
-| positivity_rate.json         | dates                    | [DD Month name] e.g. ’22 March’                                                     |
+| positivity_rate.json         | dates                    | [DD Month] e.g. ’22 March’                                                     |
 |                              | daily_positivity_rate    | Daily Positivity Rate                                                               |
 |                              | daily_positivity_rate_ma | Daily Positivity Rate, 7-day moving average                                         |
 |                              | cum_positivity_rate      | Cumulative Positivity Rate                                                          |
@@ -63,6 +63,7 @@ first layer of keys has the state name (including India) : e.g. ‘Kerala ,
 
 \*\*mobility data from www.google.com/covid19/mobility, normalised for weekend
 baseline bias
+<br/><br/>
 
 
 To access the data for any of these keys use the following command: **value =
@@ -88,13 +89,9 @@ data[‘India’][‘daily_positive_cases_ma’]**
 
 
 # Terms of Use 
-1. You are welcome to share to website content and visualisations, and run analyses using the datasets from COVID TODAY for public health, educational, journalistic and non-commercial uses, including any personal, editorial, academic, or research purposes. Commercial uses are not permitted and will require permission from COVID TODAY.
-2. **If the website or datasets are shared/used, attribution must be provided appropriately**. When using datasets from COVID TODAY, attribute as "COVID-19 Outbreak Indicators Dataset by COVID TODAY" and provide a link alongside. When linking to the website, attribute as "COVID TODAY Dashboard" and provide a link alongside. 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/) CreativeCommnons-Attribution-NonCommercial 4.0 International 
+1. *This license requires that reusers give credit to the creator.** It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format. You are welcome to share the website content and visualisations, and run independent analyses using the datasets from COVID TODAY **for public health, educational, and journalistic uses, including any personal, editorial, academic, or research purposes. We also grant permission for any derivative use of this data and website content that supports healthcare or medical research (including institutional use by public health and for-profit organizations), or journalistic usage (by nonprofit or for-profit organizations). All other commercial uses are not permitted under the Creative Commons license, and will require permission from the COVID TODAY team.**
+2. If the website or datasets are shared/used, attribution must be provided appropriately. When using Datasets from COVID TODAY, **attribute as "COVID-19 Indicators Dataset by Covid Today"** and provide a link. When using content directly from the Website, attribute as "Covid Today Dashboard" and provide a link.
 3. You should not rely on this website for medical advice or guidance. Since we have no control over the publicly available data our analyses are based on, COVID TODAY hereby disclaims any and all representations and warranties with respect to the Website, including accuracy, fitness for use, reliability, completeness, and non-infringement of third party rights.
 4. These terms and conditions are subject to change. Your use of the Website and Datasets constitutes your acceptance of these terms and conditions and any future modifications thereof.
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
-BY: Credit must be given to you, the creator.
-NC: Only noncommercial use of your work is permitted.
-SA: Adaptations must be shared under the same terms. 
